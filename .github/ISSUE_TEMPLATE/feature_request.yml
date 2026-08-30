@@ -1,0 +1,34 @@
+name: Feature request
+description: Usulkan peningkatan yang sesuai dengan aplikasi pelanggan
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Masalah pengguna
+      description: Jelaskan kebutuhan atau hambatan yang ingin diselesaikan.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Solusi yang diusulkan
+      description: Jelaskan alur dan hasil yang diharapkan.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatif
+      description: Jelaskan pendekatan lain yang sudah dipertimbangkan.
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Konfirmasi
+      options:
+        - label: Usulan tidak memerlukan credential di aplikasi mobile.
+          required: true
+        - label: Saya sudah mencari usulan yang sama.
+          required: true

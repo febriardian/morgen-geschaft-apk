@@ -1,0 +1,57 @@
+name: Bug report
+description: Laporkan perilaku aplikasi yang dapat direproduksi
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Terima kasih sudah membantu memperbaiki Morgen Geschäft Mobile. Jangan sertakan credential atau data pelanggan.
+  - type: input
+    id: version
+    attributes:
+      label: Versi aplikasi
+      placeholder: 1.2.0
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Lingkungan
+      options:
+        - Android emulator
+        - Perangkat Android
+        - Expo web
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Masalah
+      description: Jelaskan hasil aktual dan hasil yang diharapkan.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Langkah reproduksi
+      placeholder: |
+        1. Buka ...
+        2. Pilih ...
+        3. Terjadi ...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log atau tangkapan layar
+      description: Hapus token, email pribadi, alamat, nomor telepon, dan data pesanan.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Konfirmasi
+      options:
+        - label: Saya sudah mencari issue yang sama.
+          required: true
+        - label: Laporan ini tidak memuat credential atau data pelanggan.
+          required: true

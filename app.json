@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "Morgen Geschäft",
+    "slug": "morgen-geschaft",
+    "version": "1.2.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "morgen-geschaft",
+    "userInterfaceStyle": "light",
+    "android": {
+      "package": "com.morgengeschaft.app",
+      "versionCode": 3,
+      "adaptiveIcon": {
+        "backgroundColor": "#FFF9F0",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": true
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FFF9F0",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 150
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Morgen Geschäft memerlukan akses foto hanya saat kamu memilih bukti retur atau foto ulasan."
+        }
+      ],
+      [
+        "expo-secure-store",
+        {
+          "configureAndroidBackup": false
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "d24b9521-6774-4f80-b482-bf9998dd9863"
+      }
+    }
+  }
+}

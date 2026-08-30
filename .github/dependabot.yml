@@ -1,0 +1,23 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "02:00"
+      timezone: Asia/Jakarta
+    open-pull-requests-limit: 5
+    versioning-strategy: increase-if-necessary
+    groups:
+      expo-runtime:
+        patterns:
+          - expo
+          - "expo-*"
+          - "@expo/*"
+          - react
+          - react-dom
+          - react-native
+          - "react-native-*"
+      development-tools:
+        dependency-type: development
