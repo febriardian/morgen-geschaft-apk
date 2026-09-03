@@ -7,14 +7,14 @@ describe("absoluteAssetUrl", () => {
   it("resolves relative paths against the configured API base", () => {
     assert.equal(
       absoluteAssetUrl("/images/logo.png"),
-      "https://morgengeschaft.com/images/logo.png",
+      "https://example.com/images/logo.png",
     );
   });
 
   it("maps legacy product photos to optimized WebP files", () => {
     assert.equal(
       absoluteAssetUrl("/photos/Product 6.png"),
-      "https://morgengeschaft.com/photos/Product%206.webp",
+      "https://example.com/photos/Product%206.webp",
     );
   });
 
